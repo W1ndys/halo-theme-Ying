@@ -34,6 +34,17 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body,
+.footer,
+.post-content-box,
+.link-box,
+.main-menu,
+.dropdown-content,
+.dropdown-content a {
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
 .footer a {
     color: black;
 }
@@ -84,7 +95,7 @@ blockquote {
     margin: 1rem 0;
     padding: .7em;
     quotes: "\201C" "\201D" "\2018" "\2019";
-    transition: all .15s ease-out
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease, box-shadow .3s ease, transform .3s ease;
 }
 
 blockquote p {
@@ -145,14 +156,15 @@ table {
 }
 
 table th {
-    background-color: var(--blockquote-bg)
+    background-color: var(--blockquote-bg);
 }
 
 table td,
 table th {
     padding: 10px 20px;
     border: 1px solid var(--th-line);
-    text-align: center
+    text-align: center;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
 }
 
 pre[class*=hljs] {
@@ -204,6 +216,7 @@ pre[class*=hljs] {
     background-color: var(--ac-li-bg);
     color: var(--ac-li-tx);
     margin-right: 5px;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
 }
 
 .link-img-box {
@@ -268,7 +281,8 @@ div.moment-box li.info-hr:not(:first-child) {
     border-radius: 5px;
     background-color: var(--tag-bg);
     color: var(--tag-tx);
-    text-decoration: none
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
 }
 
 ol li code,
@@ -280,6 +294,7 @@ ul li code {
     padding: .0rem .3rem;
     border-radius: 4px;
     white-space: break-spaces;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
 }
 
 .vditor-task {
@@ -317,6 +332,19 @@ ul li code {
     position: absolute;
     left: -1rem;
     font-weight: 500
+}
+
+.post-copyright {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    min-width: 0;
+}
+
+.post-copyright a {
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    max-width: 100%;
+    display: inline-block;
 }
 .item-a {
     font-size: 22px;
