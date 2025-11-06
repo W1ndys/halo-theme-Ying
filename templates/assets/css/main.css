@@ -34,6 +34,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* by W1ndys */
 html,
 body,
 .footer,
@@ -572,4 +573,5 @@ ul li code {
     color: var(--blockquote-tx);
     cursor: pointer;
   }
+
 }
